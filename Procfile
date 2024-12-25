@@ -1,1 +1,1 @@
-web: php artisan storage:link && php artisan serve --host=0.0.0.0 --port=$8080 && npm run dev
+web: php artisan storage:link && php artisan serve --host=trashifyweb-production.up.railway.app --port=$8080 && npm run dev
