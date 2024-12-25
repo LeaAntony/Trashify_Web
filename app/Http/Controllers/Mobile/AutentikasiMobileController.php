@@ -25,7 +25,7 @@ class AutentikasiMobileController extends Controller
             
             // Menambahkan role dan meng-hash password
             $validateUser ['role'] = 'Warga';
-            $validateUser ['password'] = Hash::make($validateUser ['password']);
+            $validateUser ['password'] = bcrypt($validateUser ['password']);
 
             // Membuat pengguna baru
             $user = User::create($validateUser);

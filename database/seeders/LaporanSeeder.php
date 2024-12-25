@@ -14,7 +14,7 @@ class LaporanSeeder extends Seeder
         $faker = Faker::create();
         $userList = DB::table('User')->where('role', 'Warga')->pluck('ID_User');
 
-        for ($i = 0; $i < 20; $i++) {
+        for ($i = 0; $i < 10; $i++) {
             $imageFile = 'public/img/dokumenpendukung.jpg';
 
             $documentPath = 'dokumen_pengaduan/dokumen_' . $faker->unique()->numberBetween(1, 100) . '.pdf';

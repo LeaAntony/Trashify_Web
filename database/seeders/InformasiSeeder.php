@@ -17,7 +17,7 @@ class InformasiSeeder extends Seeder
         $faker = Faker::create('id_ID');
         $petugas = DB::table('Petugas_Kebersihan')->pluck('ID_Petugas');
 
-        for ($i = 0; $i < 400; $i++) {
+        for ($i = 0; $i < 20; $i++) {
             $id_petugas = $faker->randomElement($petugas);
 
             DB::table('Informasi_Pengangkutan')->insert([

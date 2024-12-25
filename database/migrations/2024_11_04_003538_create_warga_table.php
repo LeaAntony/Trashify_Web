@@ -24,7 +24,7 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('wargas');
+        Schema::dropIfExists('warga');
     }
 
     protected function call($class)
