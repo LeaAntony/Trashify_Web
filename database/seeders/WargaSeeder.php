@@ -16,7 +16,7 @@ class WargaSeeder extends Seeder
         $wargas = DB::table('User')->where('role', 'Warga')->pluck('ID_User');
 
         foreach ($wargas as $index) {
-            DB::table('warga')->insert([
+            DB::table('Warga')->insert([
                 'ID_User' => $index,
                 'created_at' => now(),
                 'updated_at' => now(),
