@@ -17,7 +17,7 @@ class PetugasSeeder extends Seeder
     {
         $faker = Faker::create('id_ID');
 
-        $petugas = DB::table('User')->where('role', 'Petugas')->pluck('ID_User');
+        $petugas = DB::table('user')->where('role', 'Petugas')->pluck('ID_User');
 
         foreach ($petugas as $index => $id_user) {
             DB::table('Petugas_Kebersihan')->insert([

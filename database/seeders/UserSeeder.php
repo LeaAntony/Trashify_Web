@@ -20,7 +20,7 @@ class UserSeeder extends Seeder
         $faker = Faker::create('id_ID');
 
         foreach (range(1, 20) as $index) {
-            DB::table('User')->insert([
+            DB::table('user')->insert([
                 'Nama' => $faker->name,
                 'Nik' => $faker->unique()->randomNumber(9, true),
                 'Tanggal_Lahir' => $faker->date('Y-m-d', '2000-12-31'),

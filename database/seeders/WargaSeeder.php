@@ -13,7 +13,7 @@ class WargaSeeder extends Seeder
      */
     public function run(): void
     {
-        $wargas = DB::table('User')->where('role', 'Warga')->pluck('ID_User');
+        $wargas = DB::table('user')->where('role', 'Warga')->pluck('ID_User');
 
         foreach ($wargas as $index) {
             DB::table('Warga')->insert([

@@ -12,7 +12,7 @@ class LaporanSeeder extends Seeder
     public function run(): void
     {
         $faker = Faker::create();
-        $userList = DB::table('User')->where('role', 'Warga')->pluck('ID_User');
+        $userList = DB::table('user')->where('role', 'Warga')->pluck('ID_User');
 
         for ($i = 0; $i < 10; $i++) {
             $imageFile = 'public/img/dokumenpendukung.jpg';

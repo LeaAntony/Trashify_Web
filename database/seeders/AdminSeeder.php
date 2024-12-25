@@ -17,7 +17,7 @@ class AdminSeeder extends Seeder
     {
         $faker = Faker::create('id_ID');
 
-        $admins = DB::table('User')->where('role', 'Admin')->pluck('ID_User');
+        $admins = DB::table('user')->where('role', 'Admin')->pluck('ID_User');
 
         foreach ($admins as $index) {
             DB::table('Admin')->insert([
