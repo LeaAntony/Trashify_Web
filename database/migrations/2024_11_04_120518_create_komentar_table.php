@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id('ID_Komentar');
             $table->foreignId('ID_Edukasi')->constrained('Konten_Edukasi', 'ID_Edukasi')->onDelete('cascade');
             $table->unsignedBigInteger('ID_User')->nullable();
-            $table->foreign('ID_User')->references('ID_User')->on('User')->onDelete('set null');
+            $table->foreign('ID_User')->references('ID_User')->on('user')->onDelete('set null');
             $table->longText('Isi_Komentar');
             $table->timestamps();
         });

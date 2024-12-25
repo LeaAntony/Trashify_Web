@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('Petugas_Kebersihan', function (Blueprint $table) {
             $table->id();
             $table->string('ID_Petugas')->unique();
-            $table->foreignId('ID_User')->constrained('User', 'ID_User')->onDelete('cascade');
+            $table->foreignId('ID_User')->constrained('user', 'ID_User')->onDelete('cascade');
             $table->enum('Wilayah_Bertugas', [
                 'Batu Ampar',
                 'Bengkong',

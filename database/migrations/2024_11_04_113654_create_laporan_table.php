@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('Pengaduan', function (Blueprint $table) {
             $table->id('ID_Pengaduan');
             $table->string('Kode_Pengaduan')->unique();
-            $table->foreignId('ID_User')->constrained('User', 'ID_User')->onDelete('cascade');
+            $table->foreignId('ID_User')->constrained('user', 'ID_User')->onDelete('cascade');
             $table->enum('Kategori_Pengaduan', ['Pengangkutan Sampah', 'Tempat Sampah Liar', 'Kondisi TPS', 'Lainnya']);
             $table->longText('Deskripsi_Pengaduan');
             $table->string('Titik_Koordinat');

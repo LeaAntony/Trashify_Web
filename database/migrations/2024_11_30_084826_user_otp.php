@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('User_Otp', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('ID_User')->constrained('User', 'ID_User')->onDelete('cascade');
+            $table->foreignId('ID_User')->constrained('user', 'ID_User')->onDelete('cascade');
             $table->integer('Kode_Otp');
             $table->dateTime('expired_at');
             $table->timestamps();

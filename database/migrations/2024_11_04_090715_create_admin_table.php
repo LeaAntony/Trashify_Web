@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('Admin', function (Blueprint $table) {
             $table->id('ID_Admin');
-            $table->foreignId('ID_User')->constrained('User', 'ID_User')->onDelete('cascade');
+            $table->foreignId('ID_User')->constrained('user', 'ID_User')->onDelete('cascade');
             $table->enum('Role_Admin', ['Master', 'Admin']);
             $table->timestamps();
         });

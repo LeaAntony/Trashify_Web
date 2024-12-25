@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('Konten_Edukasi', function (Blueprint $table) {
             $table->id('ID_Edukasi');
             $table->unsignedBigInteger('ID_User')->nullable();
-            $table->foreign('ID_User')->references('ID_User')->on('User')->onDelete('set null');
+            $table->foreign('ID_User')->references('ID_User')->on('user')->onDelete('set null');
             $table->string('Judul_Edukasi');
             $table->string('Link_URL')->nullable();
             $table->longText('Deskripsi_Edukasi');
