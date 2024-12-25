@@ -25,7 +25,7 @@ class AutentikasiMobileController extends Controller
             
             // Menambahkan role dan meng-hash password
             $validateUser ['role'] = 'Warga';
-            $validateUser ['password'] = bcrypt($validateUser ['password']);
+            $validateUser ['password'] = Hash::make($validateUser ['password']);
 
             // Membuat pengguna baru
             $user = User::create($validateUser);
@@ -51,8 +51,6 @@ class AutentikasiMobileController extends Controller
                 return response()->json(['message' => 'Email sudah digunakan!'], 409);
             }
             return response()->json(['message' => 'Validasi gagal!'], 422);
-        } catch (\Exception $e) {
-            return response()->json(['message' => 'Terjadi kesalahan, silakan coba lagi!'], 500);
         }
     }
     
