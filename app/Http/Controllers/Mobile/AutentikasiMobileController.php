@@ -51,8 +51,6 @@ class AutentikasiMobileController extends Controller
                 return response()->json(['message' => 'Email sudah digunakan!'], 409);
             }
             return response()->json(['message' => 'Validasi gagal!'], 422);
-        } catch (\Exception $e) {
-            return response()->json(['message' => 'Terjadi kesalahan, silakan coba lagi!'], 500);
         }
     }
     
