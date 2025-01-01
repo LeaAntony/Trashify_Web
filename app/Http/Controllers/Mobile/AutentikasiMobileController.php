@@ -216,42 +216,4 @@ class AutentikasiMobileController extends Controller
             return response()->json(['message' => 'Kata Sandi gagal diperbarui!'], 500);
         }
     }
-
-    // public function sendVerificationEmail(Request $request)
-    // {
-    //     $user = User::where('email', $request->email)->first();
-        
-    //     if ($user) {
-    //         $verificationCode = rand(100000, 999999); // Generate a random verification code
-    //         $user->verification_code = $verificationCode;
-    //         $user->save();
-
-    //         // Send email with verification code
-    //         Mail::to($user->email)->send(new \App\Mail\VerificationMail($verificationCode));
-
-    //         return response()->json(['message' => 'Verification code sent to your email.'], 200);
-    //     }
-
-    //     return response()->json(['message' => 'User  not found.'], 404);
-    // }
-
-    // public function verify(Request $request)
-    // {
-    //     $request->validate([
-    //         'email' => 'required|email',
-    //         'verification_code' => 'required|integer',
-    //     ]);
-
-    //     $user = User::where('email', $request->email)->first();
-
-    //     if ($user && $user->verification_code == $request->verification_code) {
-    //         $user->is_verified = true; // Set user as verified
-    //         $user->verification_code = null; // Clear the verification code
-    //         $user->save();
-
-    //         return response()->json(['message' => 'Email verified successfully.'], 200);
-    //     }
-
-    //     return response()->json(['message' => 'Invalid verification code.'], 400);
-    // }
 }
