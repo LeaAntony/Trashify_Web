@@ -168,7 +168,11 @@ class AutentikasiMobileController extends Controller
             
                 $validateDataDiri['Foto_Profil'] = $filePath;
             } else {
-                $validateDataDiri['Foto_Profil'] = $user->Foto_Profil;
+                $file = $request->file('Foto_Profil');
+                $filename = time() . '_' . $file->getClientOriginalName();
+                $filePath = $file->storeAs('uploads/foto_profil', $filename, 'public');
+            
+                $validateDataDiri['Foto_Profil'] = $filePath;
             }
         } else {
             $validateDataDiri['Foto_Profil'] = $user->Foto_Profil;
