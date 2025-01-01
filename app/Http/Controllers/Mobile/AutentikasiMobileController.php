@@ -96,7 +96,7 @@ class AutentikasiMobileController extends Controller
         try {
             $validateDataDiri = $request->validate([
                 'ID_User' => 'required|string',
-                'Foto_Profil' => 'required|image|mimes:jpeg,png,jpg,gif|max:10240',
+                'Foto_Profil' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:10240',
                 'No_Telp' => 'required|string',
                 'Alamat' => 'required|string',
                 'Jenis_Kelamin' => 'required|string',
