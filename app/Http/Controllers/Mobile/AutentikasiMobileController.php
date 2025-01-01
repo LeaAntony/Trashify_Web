@@ -119,6 +119,8 @@ class AutentikasiMobileController extends Controller
             $filePath = $file->storeAs('uploads/foto_profil', $filename, 'public');
             
             $validateDataDiri['Foto_Profil'] = $filePath;
+        }else {
+            $validateDataDiri['Foto_Profil'] = '';
         }
 
         $token = $user->createToken('token')->plainTextToken;
