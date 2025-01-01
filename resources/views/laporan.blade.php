@@ -14,10 +14,10 @@
                 <option value="30" {{ request('data_count') == '30' ? 'selected' : '' }}>30</option>
             </select>
         </div>
-        <!-- Kategori Laporan -->
-        <div class="w-52">
+        <!-- Kategori Pengaduan -->
+        <div class="w-max">
             <select data-hs-select='{
-            "placeholder": "<span class=\"inline-flex items-center\"><svg class=\"shrink-0 size-3.5 me-2\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polygon points=\"22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3\"/></svg> Kategori Laporan</span>",
+            "placeholder": "<span class=\"inline-flex items-center\"><svg class=\"shrink-0 size-3.5 me-2\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polygon points=\"22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3\"/></svg> Kategori Pengaduan</span>",
             "toggleTag": "<button type=\"button\" aria-expanded=\"false\"></button>",
             "toggleClasses": "hs-select-disabled:pointer-events-none hs-select-disabled:opacity-50 relative py-3 ps-4 pe-9 flex gap-x-2 text-nowrap w-full cursor-pointer bg-white border border-gray-200 rounded-lg text-start text-sm focus:outline-none focus:ring-2 focus:ring-blue-500",
             "dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300",
@@ -35,10 +35,10 @@
                 <option value="Lainnya" {{ request('jenis') == 'Lainnya' ? 'selected' : '' }}>Lainnya</option>
             </select>
         </div>
-        <!-- Status Laporan -->
+        <!-- Status Pengaduan -->
         <div class="w-52">
             <select data-hs-select='{
-            "placeholder": "<span class=\"inline-flex items-center\"><svg class=\"shrink-0 size-3.5 me-2\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polygon points=\"22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3\"/></svg> Status Laporan</span>",
+            "placeholder": "<span class=\"inline-flex items-center\"><svg class=\"shrink-0 size-3.5 me-2\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polygon points=\"22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3\"/></svg> Status Pengaduan</span>",
             "toggleTag": "<button type=\"button\" aria-expanded=\"false\"></button>",
             "toggleClasses": "hs-select-disabled:pointer-events-none hs-select-disabled:opacity-50 relative py-3 ps-4 pe-9 flex gap-x-2 text-nowrap w-full cursor-pointer bg-white border border-gray-200 rounded-lg text-start text-sm focus:outline-none focus:ring-2 focus:ring-blue-500",
             "dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300",
@@ -70,16 +70,16 @@
                                 No.</th>
                             <th scope="col"
                                 class="p-3 xl:px-6 xl:py-3 text-xs 2xl:text-sm border-r-2 font-medium uppercase">
-                                Kode Laporan</th>
+                                Kode Pengaduan</th>
                             <th scope="col"
                                 class="p-3 xl:px-6 xl:py-3 text-xs 2xl:text-sm border-r-2 font-medium uppercase">
                                 Nama Pelapor</th>
                             <th scope="col"
                                 class="p-3 xl:px-6 xl:py-3 text-xs 2xl:text-sm border-r-2 font-medium uppercase">
-                                Kategori Laporan</th>
+                                Kategori Pengaduan</th>
                             <th scope="col"
                                 class="p-3 xl:px-6 xl:py-3 text-xs 2xl:text-sm border-r-2 font-medium uppercase">
-                                Status Laporan</th>
+                                Status Pengaduan</th>
                             <th scope="col" class="p-3 xl:px-6 xl:py-3 text-xs 2xl:text-sm font-medium uppercase">
                                 Aksi</th>
                         </tr>
@@ -184,7 +184,7 @@
 
 <div
     class="mt-12 py-3 flex items-center text-lg 2xl:text-xl font-bold text-gray-800 before:flex-1 before:border-t before:border-gray-200 before:me-6 after:flex-1 after:border-t after:border-gray-200 after:ms-6">
-    Penanggung Jawab Laporan</div>
+    Penanggung Jawab Pengaduan</div>
 
 <!-- Penanggung Jawab -->
 <button type="button"
@@ -195,7 +195,7 @@
             d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z">
         </path>
     </svg>
-    Tambah Penanggung Jawab Laporan
+    Tambah Penanggung Jawab Pengaduan
 </button>
 
 <div class="flex flex-col">
@@ -210,13 +210,13 @@
                                 No.</th>
                             <th scope="col"
                                 class="p-3 xl:px-6 xl:py-3 text-xs 2xl:text-sm border-r-2 font-medium uppercase">
-                                Kode Laporan</th>
+                                Kode Pengaduan</th>
                             <th scope="col"
                                 class="p-3 xl:px-6 xl:py-3 text-xs 2xl:text-sm border-r-2 font-medium uppercase">
                                 Nama Petugas</th>
                             <th scope="col"
                                 class="p-3 xl:px-6 xl:py-3 text-xs 2xl:text-sm border-r-2 font-medium uppercase">
-                                Kategori Laporan</th>
+                                Kategori Pengaduan</th>
                             <th scope="col"
                                 class="p-3 xl:px-6 xl:py-3 text-xs 2xl:text-sm border-r-2 font-medium uppercase">
                                 Status Pengerjaan</th>

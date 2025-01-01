@@ -14,7 +14,7 @@ class LaporanSeeder extends Seeder
         $faker = Faker::create();
         $userList = DB::table('user')->where('role', 'Warga')->pluck('ID_User');
 
-        for ($i = 0; $i < 10; $i++) {
+        for ($i = 0; $i < 20; $i++) {
             $imageFile = 'public/img/dokumenpendukung.jpg';
 
             $documentPath = 'dokumen_pengaduan/dokumen_' . $faker->unique()->numberBetween(1, 100) . '.pdf';
@@ -37,7 +37,7 @@ class LaporanSeeder extends Seeder
             }
 
             $laporanId = DB::table('Pengaduan')->insertGetId([
-                'Kode_Pengaduan' => 'LPR-' . strtoupper($faker->unique()->bothify('###')),
+                'Kode_Pengaduan' => 'PGD-' . strtoupper($faker->unique()->bothify('###')),
                 'ID_User' => $userId,
                 'Kategori_Pengaduan' => $faker->randomElement(['Pengangkutan Sampah', 'Tempat Sampah Liar', 'Kondisi TPS', 'Lainnya']),
                 'Deskripsi_Pengaduan' => $faker->sentence(20),

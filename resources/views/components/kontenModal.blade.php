@@ -70,7 +70,7 @@
         <div class="flex flex-col w-full bg-white border shadow-sm pointer-events-auto rounded-xl">
             <div class="flex items-center justify-between px-4 py-3 border-b">
                 <h3 id="hs-vertically-centered-modal-label" class="font-bold 2xl:text-lg text-gray-800">
-                    Hapus Laporan
+                    Hapus Konten Edukasi
                 </h3>
                 <button type="button"
                     class="inline-flex items-center justify-center text-gray-800 bg-gray-100 border border-transparent rounded-full size-8 gap-x-2 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none"

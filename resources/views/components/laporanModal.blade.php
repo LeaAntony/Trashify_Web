@@ -9,7 +9,7 @@
             class="flex flex-col w-full max-h-full overflow-hidden bg-white border shadow-sm pointer-events-auto rounded-xl">
             <div class="flex items-center justify-between px-4 py-3 border-b">
                 <h3 id="hs-vertically-centered-scrollable-modal-label" class="font-bold 2xl:text-lg text-gray-800">
-                    Edit Status Laporan
+                    Edit Status Pengaduan
                 </h3>
                 <button type="button"
                     class="inline-flex items-center justify-center text-gray-800 bg-gray-100 border border-transparent rounded-full size-8 gap-x-2 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none"
@@ -31,7 +31,7 @@
                         @method('PATCH')
                         <!-- Kode Laporan -->
                         <div class="w-full mb-5">
-                            <label for="input-label" class="block mb-2 text-sm 2xl:text-base font-medium">Kode Laporan
+                            <label for="input-label" class="block mb-2 text-sm 2xl:text-base font-medium">Kode Pengaduan
                                 :</label>
                             <input type="text" id="input-label" name="Kode_Pengaduan"
                                 class="block w-full px-4 py-3 text-sm 2xl:text-base border-gray-200 rounded-lg pointer-events-none focus-within:outline-none disabled:opacity-50 disabled:pointer-events-none"
@@ -40,7 +40,7 @@
                         <!-- Kategori Laporan -->
                         <div class="w-full mb-5">
                             <label for="input-label" class="block mb-2 text-sm 2xl:text-base font-medium">Kategori
-                                Laporan :</label>
+                                Pengaduan :</label>
                             <div class="grid grid-cols-2 gap-4">
                                 <div class="flex">
                                     <input type="radio" name="Kategori_Pengaduan"
@@ -83,7 +83,7 @@
                         <!-- Deskripsi Laporan -->
                         <div class="w-full mb-5">
                             <label for="textarea-label" class="block mb-2 text-sm 2xl:text-base font-medium">Deskripsi
-                                Laporan</label>
+                                Pengaduan</label>
                             <textarea id="textarea-label" name="Deskripsi_Pengaduan"
                                 class="block w-full px-4 py-3 text-sm 2xl:text-base border-gray-200 rounded-lg pointer-events-none focus-within:outline-none disabled:opacity-50 disabled:pointer-events-none"
                                 rows="3" placeholder="Deskripsi Laporan"
@@ -147,7 +147,7 @@
                         <!-- Status Laporan -->
                         <div class="w-full">
                             <label for="input-label" class="block mb-2 text-sm 2xl:text-base font-medium">Status
-                                Laporan :</label>
+                                Pengaduan :</label>
                             <div class="flex gap-x-6">
                                 <div class="flex items-center">
                                     <input type="radio" name="Status_Pengaduan"
@@ -219,7 +219,7 @@
         <div class="flex flex-col w-full bg-white border shadow-sm pointer-events-auto rounded-xl">
             <div class="flex items-center justify-between px-4 py-3 border-b">
                 <h3 id="hs-vertically-centered-modal-label" class="font-bold 2xl:text-lg text-gray-800">
-                    Hapus Laporan
+                    Hapus Pengaduan
                 </h3>
                 <button type="button"
                     class="inline-flex items-center justify-center text-gray-800 bg-gray-100 border border-transparent rounded-full size-8 gap-x-2 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none"
@@ -283,7 +283,7 @@
             class="flex flex-col w-full max-h-full overflow-hidden bg-white border shadow-sm pointer-events-auto rounded-xl">
             <div class="flex items-center justify-between px-4 py-3 border-b">
                 <h3 id="hs-vertically-centered-scrollable-modal-label" class="font-bold text-gray-800">
-                    Detail Laporan
+                    Detail Pengaduan
                 </h3>
                 <button type="button"
                     class="inline-flex items-center justify-center text-gray-800 bg-gray-100 border border-transparent rounded-full size-8 gap-x-2 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none"
@@ -302,7 +302,7 @@
                     <form action="">
                         <!-- Kode Laporan -->
                         <div class="w-full mb-5">
-                            <label for="input-label" class="block mb-2 text-sm 2xl:text-base font-medium">Kode Laporan
+                            <label for="input-label" class="block mb-2 text-sm 2xl:text-base font-medium">Kode Pengaduan
                                 :</label>
                             <input type="text" id="input-label" name="Kode_Pengaduan"
                                 class="block w-full px-4 py-3 text-sm 2xl:text-base border-gray-200 rounded-lg pointer-events-none focus-within:outline-none disabled:opacity-50 disabled:pointer-events-none"
@@ -311,7 +311,7 @@
                         <!-- Kategori Laporan -->
                         <div class="w-full mb-5">
                             <label for="input-label" class="block mb-2 text-sm 2xl:text-base font-medium">Kategori
-                                Laporan :</label>
+                                Pengaduan :</label>
                             <div class="grid grid-cols-2 gap-4">
                                 <div class="flex">
                                     <input type="radio" name="Kategori_Pengaduan"
@@ -354,7 +354,7 @@
                         <!-- Deskripsi Laporan -->
                         <div class="w-full mb-5">
                             <label for="textarea-label" class="block mb-2 text-sm 2xl:text-base font-medium">Deskripsi
-                                Laporan</label>
+                                Pengaduan</label>
                             <textarea id="textarea-label" name="Deskripsi_Pengaduan"
                                 class="block w-full px-4 py-3 text-sm 2xl:text-base border-gray-200 rounded-lg pointer-events-none focus-within:outline-none disabled:opacity-50 disabled:pointer-events-none"
                                 rows="3" placeholder="Deskripsi Laporan"
@@ -429,7 +429,7 @@
                         <!-- Status Laporan -->
                         <div class="w-full">
                             <label for="input-label" class="block mb-2 text-sm 2xl:text-base font-medium">Status
-                                Laporan :</label>
+                                Pengaduan :</label>
                             <div class="flex gap-x-6">
                                 <div class="flex items-center">
                                     <input type="radio" name="Status_Pengaduan"
@@ -555,7 +555,7 @@
                         </div>
                         <!-- Kode Laporan -->
                         <div class="w-full mb-5">
-                            <label for="input-label" class="block text-sm 2xl:text-base font-medium mb-2">Kode Laporan
+                            <label for="input-label" class="block text-sm 2xl:text-base font-medium mb-2">Kode Pengaduan
                                 :</label>
                             <div class="relative" data-hs-combo-box="">
                                 <div class="relative">
@@ -606,7 +606,7 @@
                         <!-- Kategori Laporan -->
                         <div class="w-full mb-5">
                             <label for="input-label" class="block text-sm 2xl:text-base font-medium mb-2">Kategori
-                                Laporan
+                                Pengaduan
                                 :</label>
                             <input type="text" id="kategori_laporan_input"
                                 class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm 2xl:text-base focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
@@ -736,7 +736,7 @@
                         </div>
                         <!-- Kode Laporan -->
                         <div class="w-full mb-5">
-                            <label for="input-label" class="block text-sm 2xl:text-base font-medium mb-2">Kode Laporan
+                            <label for="input-label" class="block text-sm 2xl:text-base font-medium mb-2">Kode Pengaduan
                                 :</label>
                             <div class="relative" data-hs-combo-box="">
                                 <div class="relative">
@@ -787,7 +787,7 @@
                         <!-- Kategori Laporan -->
                         <div class="w-full mb-5">
                             <label for="input-label" class="block text-sm 2xl:text-base font-medium mb-2">Kategori
-                                Laporan
+                                Pengaduan
                                 :</label>
                             <input type="text" id="kategori_laporan_input"
                                 class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm 2xl:text-base focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
@@ -805,7 +805,7 @@
                                 Laporan
                                 :</label>
                             <select data-hs-select='{
-                                "placeholder": "Pilih Status Laporan",
+                                "placeholder": "Pilih Status Pengaduan",
                                 "toggleTag": "<button type=\"button\" aria-expanded=\"false\"></button>",
                                 "toggleClasses": "hs-select-disabled:pointer-events-none hs-select-disabled:opacity-50 relative py-3 ps-4 pe-9 flex gap-x-2 text-nowrap w-full cursor-pointer bg-white border border-gray-200 rounded-lg text-start text-sm 2xl:text-base focus:outline-none focus:ring-2 focus:ring-blue-500",
                                 "dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300",
@@ -814,7 +814,8 @@
                                 "extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2\"><svg class=\"shrink-0 size-3.5 text-gray-500 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m7 15 5 5 5-5\"/><path d=\"m7 9 5-5 5 5\"/></svg></div>"
                                 }' class="hidden" name="Status_Pengaduan" required>
                                 <option value="">Pilih</option>
-                                <option value="Selesai" {{ $PJ->Status_Pengaduan == 'Selesai' ? 'selected' : '' }}>Selesai
+                                <option value="Selesai" {{ $PJ->Status_Pengaduan == 'Selesai' ? 'selected' : '' }}>
+                                    Selesai
                                 </option>
                                 <option value="Sedang Diproses"
                                     {{ $PJ->Status_Pengaduan == 'Sedang Diproses' ? 'selected' : '' }}>
@@ -926,7 +927,7 @@
                         </div>
                         <!-- Kode Laporan -->
                         <div class="w-full mb-5">
-                            <label for="input-label" class="block text-sm 2xl:text-base font-medium mb-2">Kode Laporan
+                            <label for="input-label" class="block text-sm 2xl:text-base font-medium mb-2">Kode Pengaduan
                                 :</label>
                             <div class="relative" data-hs-combo-box="">
                                 <div class="relative">
@@ -972,7 +973,7 @@
                         <!-- Kategori Laporan -->
                         <div class="w-full mb-5">
                             <label for="input-label" class="block text-sm 2xl:text-base font-medium mb-2">Kategori
-                                Laporan
+                                Pengaduan
                                 :</label>
                             <input type="text" id="kategori_laporan_input"
                                 class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm 2xl:text-base focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
@@ -985,7 +986,7 @@
                                 Laporan
                                 :</label>
                             <select data-hs-select='{
-                                "placeholder": "Pilih Status Laporan",
+                                "placeholder": "Pilih Status Pengaduan",
                                 "toggleTag": "<button type=\"button\" aria-expanded=\"false\"></button>",
                                 "toggleClasses": "hs-select-disabled:pointer-events-none hs-select-disabled:opacity-50 relative py-3 ps-4 pe-9 flex gap-x-2 text-nowrap w-full cursor-pointer bg-white border border-gray-200 rounded-lg text-start text-sm 2xl:text-base focus:outline-none focus:ring-2 focus:ring-blue-500",
                                 "dropdownClasses": "mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-lg overflow-hidden overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300",
@@ -994,7 +995,8 @@
                                 "extraMarkup": "<div class=\"absolute top-1/2 end-3 -translate-y-1/2\"><svg class=\"shrink-0 size-3.5 text-gray-500 \" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m7 15 5 5 5-5\"/><path d=\"m7 9 5-5 5 5\"/></svg></div>"
                                 }' class="hidden" name="Status_Pengaduan" required>
                                 <option value="">Pilih</option>
-                                <option value="Selesai" {{ $PJ->Status_Pengaduan == 'Selesai' ? 'selected' : '' }}>Selesai
+                                <option value="Selesai" {{ $PJ->Status_Pengaduan == 'Selesai' ? 'selected' : '' }}>
+                                    Selesai
                                 </option>
                                 <option value="Sedang Diproses"
                                     {{ $PJ->Status_Pengaduan == 'Sedang Diproses' ? 'selected' : '' }}>

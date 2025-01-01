@@ -18,7 +18,7 @@ class KontenEdukasiSeeder extends Seeder
 
         for ($i = 0; $i < 20; $i++) {
             DB::table('Konten_Edukasi')->insert([
-                'ID_User' => $faker->randomElement(DB::table('user')->where('role', 'Warga')->pluck('ID_User')->toArray()),
+                'ID_User' => $faker->randomElement(DB::table('User')->where('role', 'Warga')->pluck('ID_User')->toArray()),
                 'Judul_Edukasi' => $faker->sentence(6),
                 'Link_URL' => $faker->url(),
                 'Deskripsi_Edukasi' => $faker->paragraph(),

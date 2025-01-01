@@ -26,7 +26,7 @@ class LaporanModel extends Model
         static::creating(function ($model) {
             $latestId = static::max('ID_Pengaduan');
             $nextId = $latestId + 1;
-            $model->Kode_Pengaduan = 'LPR-' . str_pad($nextId, 3, '0', STR_PAD_LEFT);
+            $model->Kode_Pengaduan = 'PGD-' . str_pad($nextId, 3, '0', STR_PAD_LEFT);
         });
     }
     public function UserTable()

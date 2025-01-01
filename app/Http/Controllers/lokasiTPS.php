@@ -41,9 +41,12 @@ class lokasiTPS extends Controller
         $dataTPS = $queryTPS->paginate($dataCount);
         $dataPengangkutan = $queryPengangkutan->paginate($dataCount);
 
+        $tps = TPSModel::get();
+
         return view('/lokasiTPS', [
             "title" => "Lokasi TPS",
             "dataTPS" => $dataTPS,
+            "tps" => $tps,
             "dataPengangkutan" => $dataPengangkutan,
             "wilayahOptions" => $wilayahOptions,
             "dataUser" => $dataUser,
